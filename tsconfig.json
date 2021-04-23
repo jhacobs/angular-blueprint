@@ -1,0 +1,45 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@components/*": ["src/app/components/*"],
+      "@environments/*": ["src/environments/*"],
+      "@helpers/*": ["src/app/helpers/*"],
+      "@models/*": ["src/app/models/*"],
+      "@pages/*": ["src/app/pages/*"],
+      "@validators/*": ["src/app/validators/*"],
+      "@services/*": ["src/app/services/*"],
+      "@guards/*": ["src/app/guards/*"],
+      "@interceptors/*": ["src/app/interceptors/*"],
+      "@responses/*": ["src/app/responses/*"],
+      "@requests/*": ["src/app/requests/*"],
+      "@directives/*": ["src/app/directives/*"],
+      "@pipes/*": ["src/app/pipes/*"]
+    }
+  },
+  "angularCompilerOptions": {
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
